@@ -9,7 +9,7 @@ namespace DIO.Series
 		private string Titulo { get; set; }
 		private string Descricao { get; set; }
 		private int Ano { get; set; }
-        private bool Excluido { get; set; }
+        private bool Excluido { get; set; } //avisa se o registro esta excluído ou não..
 
         // Usando Métodos
 		public Serie(int id, Genero genero, string titulo, string descricao, int ano)
@@ -24,7 +24,7 @@ namespace DIO.Series
 
         public override string ToString()
 		{
-            string retorno = "";
+            string retorno = " ";
             
 			retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
